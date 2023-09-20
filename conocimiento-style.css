@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+}  
+body{  
+background: rgb(4,0,6);
+background: linear-gradient(0deg, rgba(4,0,6,1) 0%, rgba(204,69,252,1) 55%, rgba(81,37,150,1) 100%);
+}
+
+nav ul{   
+ display:flex; 
+justify-content: flex-end;   
+padding: 5px; 
+border: 1px solid #000; 
+background: rgb(4,0,6);
+background: linear-gradient(0deg, rgba(4,0,6,1) 1%, rgba(204,69,252,1) 30%, rgba(81,37,150,1) 100%);
+
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px; 
+} 
+nav li {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    color: #7e0482;
+    position: relative;
+}
+
+nav li:hover {
+    background-color: #c54bd1;
+    color: #bf51c7;
+}
+
+nav li>ul {
+    display: none;
+}
+
+nav li:hover>ul {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0px; 
+    
+}
+h1{ 
+    display: flex; 
+    justify-content: center; 
+    margin: 40px;
+ 
+}  
+.tecno {
+    display: flex;
+    justify-content: space-between; 
+    padding: 25px;
+  }
+  
+  .text {
+    flex: 1; 
+    margin: 0 10px; 
+    padding: 15px; 
+    font-size: 20px;
+}
+.conocimiento{
+    display: flex; 
+    justify-content: space-evenly;
+}
+.footer {
+   
+    color: rgb(148, 14, 110);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 100%; 
+    margin: 10px;  
+   padding: 25px;  
+  
+} 
+
+a{ 
+text-decoration: none;
+margin-right: 20px; 
+margin-left: 20px; 
+    color: rgb(148, 14, 110);
+} 
+.redes {
+    display: flex;
+    justify-content: center;
+    margin: 20px; 
+   
+    
+}  
+.btn{ 
+    margin: 10px;
+}
+
+.pie {
+    display: flex; 
+    justify-content: center;
+   font-size: 100%;  
+  
+}  
+ 
+@media (max-width:640px) { 
+    .menu{ 
+         display: flex; 
+       align-items: start;
+     }
+    } 
+    .navbar-mobile {
+  display: none;
+   height: 50px;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .navbar-mobile {
+    display: flex;
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width:320px) {
+    .tecno,.menu-footer, .redes, .footer{   
+      flex-direction:  column;
+    width: 100%;  
+    margin-left: 20%; 
+    text-align: center;
+     }
+    } 
+    @media (max-width: 480px) {
+      .tecno,.menu-footer, .redes, .footer{   
+        flex-direction:  column;
+      width: 100%;  
+      align-items: center;
+       }
+      } 
+     
